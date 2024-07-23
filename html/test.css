@@ -1,0 +1,47 @@
+.first {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: navy;
+    padding: 0;
+    overflow-y: auto; /* İçeriğin sığmaması durumunda kaydırma çubuğu ekler */
+}
+.first div:first-of-type{
+    margin-top: 80px;
+}
+
+.first .a {
+    
+    font-size: 15px;
+    text-align: left;
+    color: rgb(198, 204, 209);
+    cursor: pointer;
+    margin-bottom: 3px;
+    position: relative;
+    background-color: rgb(6, 75, 135);
+    padding: 10px;
+    transition: margin-bottom 300ms ease; /* Margin değişikliklerinde geçiş ekler */
+}
+
+.a .b {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: display 300ms ease, height 300ms ease; /* Geçiş ekler */
+}
+
+.a:hover .b {
+    display: block;
+    height: auto;
+}
+
+/* Hover olayı ile alt seçenekleri gösterirken alttaki ana seçenekleri aşağıya kaydırma */
+.a:hover {
+    margin-bottom: 3px; /* Alt seçeneklerin yüksekliğine göre margin ayarlanır */
+}
