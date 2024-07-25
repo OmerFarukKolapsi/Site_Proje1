@@ -1,0 +1,251 @@
+.first {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: navy;
+    padding: 0;
+    overflow-y: auto; /* İçeriğin sığmaması durumunda kaydırma çubuğu ekler */
+}
+.first div:first-of-type{
+    margin-top: 10px;
+}
+
+.first .a {
+   width: auto;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(249, 253, 255);
+    cursor: pointer;
+    margin-bottom: 3px;
+    position: relative;
+    background-color: rgb(6, 75, 135);
+    padding: 10px;
+    transition: margin-bottom 300ms ease; /* Margin değişikliklerinde geçiş ekler */
+}
+
+.a .b {
+    display: none;
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    border: 1px solid50, rgb(226, 230, 232);
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: display 300ms ease, height 300ms ease; /* Geçiş ekler */
+}
+
+.a:hover .b {
+    display: block;
+    height: auto;
+}
+
+/* Hover olayı ile alt seçenekleri gösterirken alttaki ana seçenekleri aşağıya kaydırma */
+.a:hover {
+    margin-bottom: 3px; /* Alt seçeneklerin yüksekliğine göre margin ayarlanır */
+}
+
+.ping {
+    max-width: 100%; /* Genişliği %100 ile sınırlar */
+    height: auto; /* Yüksekliği orantılı olarak ayarlar */
+    max-width: 100%; /* Genişliği %100 ile sınırlar */
+    height: auto; /* Yüksekliği orantılı olarak ayarlar */
+    border-radius: 50%; /* Oval hale getirir */
+    display: block; /* Görüntüyü ortalamak için yardımcı olur */
+    margin: auto; /* Görüntüyü yatay olarak ortalar */
+    width: 85px;
+    height: 85px;
+   
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
+    height: 150px; /* Konteyner yüksekliği */
+   
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+.twice{
+    
+    position: fixed;
+    left:15%;
+    top: 0px;
+    width: 85%;
+    height: 10%;
+    background-color: rgb(216, 216, 224);
+    border: black 2px;
+    padding: 0;
+    overflow-y: auto; /* İçeriğin sığmaması durumunda kaydırma çubuğu ekler */
+
+    
+}
+
+
+.search-container {
+    position: fixed;
+    width: 20%;
+    height: 40px;
+    left: 20%; /* Arama kutusunun konumunu ayarlayın */
+    top: 20px; /* Arama kutusunun üstten uzaklığını ayarlayın */
+    display: flex;
+    align-items: center; /* İkon ve butonu dikey olarak hizalar */
+    background-color: white;
+    border: 2px solid #8bdae3;
+    border-radius: 20px;
+    padding: 0 10px; /* İçeriklerin etrafında boşluk */
+}
+
+
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%; /* Arama alanının genişliğini tam ayarla */
+    height: 25px; /* Yüksekliği arttır */
+    padding: 10px;
+    border: none; /* Kenar çizgisini kaldır */
+    border-radius: 4px 0 0 4px; /* Köşe yuvarlama */
+    outline: none;
+    box-sizing: border-box; /* İçerik ve kenar çizgisini iç içe hizala */
+}
+
+.search-button {
+    padding: 10px 20px; /* Butonun iç paddingi */
+    border: none; /* Kenar çizgisini kaldır */
+    background-color: navy;
+    color: white;
+    border-radius: 0 4px 4px 0; /* Köşe yuvarlama */
+    cursor: pointer;
+    height: 25px; /* Buton yüksekliği */
+    display: flex;
+    align-items: center; /* İkon ile metni hizalar */
+    margin-left: 40px;
+    margin-top: -27px;
+}
+
+
+
+.search-button:hover {
+    background-color: darkblue;
+}
+
+.icon-container {
+    position: absolute; /* Arama alanının içine konumlandır */
+    right: 10px; /* Sağdan uzaklık */
+    height: 24px; /* İkon yüksekliği */
+    width: 24px; /* İkon genişliği */
+}
+
+  
+  .size-6 {
+    width: 24px; /* İkon boyutunu ayarlayabilirsiniz */
+    height: 24px;
+  }
+  .size-7 {
+    width: 24px; /* İkon boyutunu ayarlayabilirsiniz */
+    height: 24px;
+  }
+
+  .icon-2{
+    position: relative; /* Arama alanının içine konumlandır */
+    left: 15px; /* Sağdan uzaklık */
+    height: 24px; /* İkon yüksekliği */
+    width: 24px; /* İkon genişliği */
+    margin-top: 27px;
+}
+
+  
+.size-5{
+    position: relative; /* Arama alanının içine konumlandır */
+    left: 810px; /* Sağdan uzaklık */
+    height: 24px; /* İkon yüksekliği */
+    width: 24px; /* İkon genişliği */
+    margin-top: 0;
+   
+}
+
+.size-9{
+    position: relative; /* Arama alanının içine konumlandır */
+    left: 830px; /* Sağdan uzaklık */
+    height: 24px; /* İkon yüksekliği */
+    width: 24px; /* İkon genişliği */
+    margin-top: 0;
+   
+}
+.size-10{
+    position: relative; /* Arama alanının içine konumlandır */
+    left: 850px; /* Sağdan uzaklık */
+    height: 24px; /* İkon yüksekliği */
+    width: 24px; /* İkon genişliği */
+    margin-top: 0;
+
+}
+
+.profile{
+    position: relative; /* Arama alanının içine konumlandır */
+    left: 600px; /* Sağdan uzaklık */
+    height: 36px; /* İkon yüksekliği */
+    width: 36px; /* İkon genişliği */
+    margin-top: 0;
+    border: darkblue 4px solid;
+    border-radius: 50%;
+}
+
+.information-profile{
+    
+    position: relative; /* Arama alanının içine konumlandır */
+    left: 580px; 
+   font-size: 12px;
+    font-weight: bold;
+}
+.a{
+    width: 80px;
+}
+
+.help{
+    position: fixed;
+    display: flex;
+    top: 24px;
+    right: 0;
+    width: 8%;
+    height: 30px;
+    color: white;
+    background-color: rgb(60, 138, 161);
+    padding: 0;
+    overflow-y: auto; 
+    border-radius: 50px 0 0 50px;
+}
+.write{
+    margin-top: 5px;
+    margin-left:20px;
+}
+
+.help .size-11{
+    display: flex;
+    color: white;
+    position: relative; 
+    margin-top: 3px;
+    left: 5px; /* Sağdan uzaklık */
+    height: 24px; /* İkon yüksekliği */
+    width: 24px; /* İkon genişliği */
+    
+
+}
